@@ -1,0 +1,23 @@
+<h1>Dealers</h1>
+
+<table>
+	<% @dealers.each do |d| %>
+		<tr>
+			<td>
+				<strong><%= d[:name] %></strong><br>
+				<%= d[:address] %><br>
+				<%= d[:city] %>, <%= d[:state] %> <%= d[:zip] %><br>
+				<%= d[:phone] %><br>
+				<%= d[:email] %><br>
+				<%= d[:website] %>
+			</td>
+			<td>
+				Facebook: <%= d[:facebook] %><br>
+				Twitter: <%= d[:twitter] %><br>
+				Instagram: <%= d[:instagram] %>
+			</td>
+		</tr>
+</table>
+
+	
+<% end %>

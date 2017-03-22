@@ -1,0 +1,83 @@
+<%= form_for @dealer do |f| %>
+<% if @dealer.errors.any? %>
+	<h2><%= pluralize(@dealer.errors.count, "error") %> prevented this dealer from saving</h2>
+	<ul>
+		<% @dealer.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		<% end %>
+	</ul>
+<% end %>
+	<%= f.label :name %><br />
+	<%= f.text_field :name %>
+
+	<br>
+	<br>
+
+	<%= f.label :address %><br />
+	<%= f.text_field :address %>
+
+	<br>
+	<br>
+
+	<%= f.label :city %><br />
+	<%= f.text_field :city %>
+
+	<br>
+	<br>
+
+	<%= f.label :state %><br />
+	<%= f.text_field :state %>
+
+	<br>
+	<br>
+
+	<%= f.label :zip %><br />
+	<%= f.text_field :zip %>
+
+	<br>
+	<br>
+
+	<%= f.label :country %><br />
+	<%= f.text_field :country %>
+
+	<br>
+	<br>
+
+	<%= f.label :phone %><br />
+	<%= f.text_field :phone %>
+
+	<br>
+	<br>
+
+	<%= f.label :rep %><br />
+	<%= f.text_field :rep %>
+
+	<br>
+	<br>
+
+	<%= f.label :website %><br />
+	<%= f.text_field :website %>
+
+	<br>
+	<br>
+
+	<%= f.label :facebook %><br />
+	<%= f.text_field :facebook %>
+
+	<br>
+	<br>
+
+	<%= f.label :twitter %><br />
+	<%= f.text_field :twitter %>
+
+	<br>
+	<br>
+
+	<%= f.label :instagram %><br />
+	<%= f.text_field :instagram %>
+
+	<br>
+	<br>
+
+	<%= f.submit %>
+<% end %>

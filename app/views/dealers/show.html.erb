@@ -1,0 +1,4 @@
+<h1><%= @dealer.name %></h1>
+
+<%= link_to 'Edit Dealer', edit_dealer_path(@dealer) %><br>
+<%= link_to 'Delete Dealer', dealer_path(@dealer), method: :delete, data: { confirm: "Are you sure you want to delete this dealer?"} %>
